@@ -19,13 +19,13 @@ from resources.lib.GKDecrypter import decryptKey
 from resources.lib.GKDecrypter import GKDecrypter
  
  
-SITE_IDENTIFIER = 'poypi_com'
-SITE_NAME = 'Poypi.com'
+SITE_IDENTIFIER = 'poploz_com'
+SITE_NAME = 'poploz.com'
 SITE_DESC = 'Film en streaming'
  
 ACCEUILPATTERN  = ''#non utilisé
 FILMPATTERN = '<div class="article-content"><p style="text-align: center;"><img src="(.+?)" border.+?<p style="text-align: left;">([^<>]+?)<\/p>'
-URL_MAIN = 'http://www.poypi.com/rgc/'
+URL_MAIN = 'http://www.poploz.com/rgc/'
 #SEARCHPATTERN = '<fieldset><div><a href="\/rgc\/(.+?)">(.+?)<\/a><\/div><\/fieldset>'
 SEARCHPATTERN = '<fieldset> *<div> *<b><a *href="\/rgc\/(.+?)" *>(.+?)<\/a><\/b>'
 #NORMALPATTERN = '<span style="list-style-type:none;" >.+? href="\/rgc\/(.+?)">(.+?)<(?:font|\/a)'
@@ -103,6 +103,7 @@ def showGenre():
     oGui = cGui()
 
     liste = []
+    liste;append( ['a l'affiche',URL_MAIN + 'index.php?option=com_content&view=category&id=29&Itemid=7']
     liste.append( ['Action',URL_MAIN + 'index.php?option=com_content&view=category&id=1'] )
     liste.append( ['Aventure',URL_MAIN + 'index.php?option=com_content&view=category&id=4'] )
     liste.append( ['Comedie',URL_MAIN + 'index.php?option=com_content&view=category&id=6'] )
